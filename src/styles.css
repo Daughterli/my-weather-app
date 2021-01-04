@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserat", sans-serif;
+  /* background-image: url(/src/bg2.jpg); */
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: #ffffff;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+  display: block;
+}
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba (0, 0, 0, 0.3),
+    rgba (0, 0, 0, 0.6)
+  );
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+
+header input {
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 16px 0px 16px 0px;
+  border-bottom: 3px solid #e1ecf4;
+  color: #e1ecf4;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.2s ease-out;
+}
+
+header input:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.searchCity {
+  background-color: #db8951;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 16px 0px 16px 0px;
+  border: 1px solid transparent;
+  transition: 0.2s ease-in;
+  background-clip: padding-box;
+  overflow: visible;
+  line-height: 0;
+  font-size: 16px;
+}
+
+main {
+  flex: 1 1 100%;
+  padding: 25px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.location .cityName {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.location .date {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.location .time {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.current .temp {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 900;
+  margin: 30px 0px;
+  text-shadow: 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.units {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.current .temp span {
+  font-weight: 500;
+}
+
+.current .weather {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+.current .hi-low {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.week {
+  font-family: "montserat", sans-serif;
+  display: inline-block;
+  margin-bottom: 2px;
+  padding-left: 0;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
